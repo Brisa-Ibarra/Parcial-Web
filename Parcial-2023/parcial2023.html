@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parcial</title>
+
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+	<div class="formulario">
+		<h1>Registro de Alumnos</h1>
+		<form action="registrar.php" method="POST">
+			<label>Nombre <span class="required">*</span></label><br>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre"><br><br>
+
+			<label>Apellido <span class="required">*</span> </label><br>
+			<input type="text" name="apellido" id="apellido" placeholder="Apellido"><br><br>
+
+			<label>Edad</label><br>
+			<input type="number" name="edad" id="edad" min="18"><br><br>
+
+			<label>DNI <span class="required">*</span></label><br>
+			<input type="text" name="dni" id="dni" required><br><br>
+
+			<label>Teléfono</label><br>
+			<input type="tel" name="telefono" id="telefono"><br><br>
+
+			<label>Correo electronico <span class="required">*</span></label><br>
+			<input type="email" name="correo" id="correo" required><br><br>
+
+			<input type="submit" value="Registrar">
+		</form>
+	</div>
+	
+</body>
+</html>
